@@ -44,3 +44,6 @@ eureka:
     fetchRegistry: false
     service-url:
       defaultZone: http://localhost:10099/eureka/
+  server:
+    enableSelfPreservation: false #（设为false，关闭自我保护）
+    evictionIntervalTimerInMs: 5000 # 清理间隔（单位毫秒，默认是60*1000）
